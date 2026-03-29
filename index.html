@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jamaica Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{scroll-behavior:smooth;}
+
+body{
+    background:linear-gradient(135deg,#ffe6f7,#f5e6ff);
+    overflow-x:hidden;
+}
+
+
+.sakura{
+    position:fixed;
+    top:-10px;
+    font-size:20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(100vh) rotate(360deg);
+    }
+}
+
+
+header{
+    text-align:center;
+    padding:90px 20px;
+    background:linear-gradient(135deg,#ff6fa1,#c77dff);
+    color:white;
+}
+
+.profile img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:5px solid white;
+    box-shadow:0 0 25px #ff9acb;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+}
+
+header h1{
+    margin-top:15px;
+    text-shadow:0 0 10px white;
+}
+
+
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(10px);
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    margin:0 12px;
+    text-decoration:none;
+    color:#c77dff;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff6fa1;
+    text-shadow:0 0 8px #ff9acb;
+}
+
+
+section{
+    max-width:900px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(12px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+.project{
+    background:rgba(255,255,255,0.85);
+    padding:20px;
+    border-radius:15px;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 10px 30px rgba(199,125,255,0.4);
+}
+
+
+.btn{
+    display:inline-block;
+    padding:8px 14px;
+    margin:5px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#ff6fa1,#c77dff);
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    box-shadow:0 0 10px rgba(255,111,161,0.6);
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #ff9acb;
+}
+
+
+.task-output,.task-code{
+    display:none;
+}
+
+.task-output:target,
+.task-code:target{
+    display:block;
+}
+
+.back{
+    display:inline-block;
+    margin-bottom:15px;
+    color:#ff4d88;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="home">
+<div class="profile">
+<img src="c:\Users\hilary\pictures.htlm\jam.png">
+</div>
+
+<h1>🌸 Hi, I'm Jamaica  Mae S. Diaz</h1>
+<p>BS Information Technology Student 💻</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! My name is Jam, a college student taking up Bachelor of Science in Information Technology at Pampanga State Agricultural University. I am friendly and outgoing person who loves traveling, watching movies, and exploring new places. </p>
+<p>During my free htime, I sometimes play online and offline games when i feel bored. These hobbies help me relax and  make my day enjoyable</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul>
+<li>Pampanga State Agricultural University</li>
+<li>Benigno Aquino National High School</li>
+<li>Tinang Elementary School</li>
+</ul>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="project">
+<h3>Task 1 SIMPLE RESUME</h3>
+<a href="#task1" class="btn">Output</a>
+<a href="#code1" class="btn">Code</a>
+<a href="task1_resume.html" class="btn">Actual</a>
+</div>
+
+<div class="project">
+<h3>Task 2 NESTED LIST</h3>
+<a href="#task2" class="btn">Output</a>
+<a href="#code2" class="btn">Code</a>
+<a href="task2_nestedlist.html" class="btn">Actual</a>
+</div>
+
+<div class="project">
+<h3>Task 3 IMAGE MAP</h3>
+<a href="#task3" class="btn">Output</a>
+<a href="#code3" class="btn">Code</a>
+<a href="task3_imagemap.html" class="btn">Actual</a>
+</div>
+
+<div class="project">
+<h3>Task 4 WEB PROPOSAL</h3>
+<a href="#task4" class="btn">Output</a>
+<a href="#code4" class="btn">Code</a>
+<a href="task4_webproposal.html" class="btn">Actual</a>
+</div>
+
+<div class="project">
+<h3>Task 5 RESUME DESIGN</h3>
+<a href="#task5" class="btn">Output</a>
+<a href="#code5" class="btn">Code</a>
+<a href="task5_resumedesign.html" class="btn">Actual</a>
+</div>
+
+<div class="project">
+<h3>Task 6 CSS DISPLAY</h3>
+<a href="#task6" class="btn">Output</a>
+<a href="#code6" class="btn">Code</a>
+<a href="Task6_Display.html" class="btn">Actual</a>
+</div>
+
+</section>
+
+<!-- OUTPUTS -->
+<section id="task1" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\output#1.jpeg" width="100%">
+</section>
+
+<section id="task2" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\output#2.jpeg" width="100%">
+</section>
+
+<section id="task3" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\output#3.jpeg" width="100%">
+</section>
+
+<section id="task4" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\output#4.jpeg" width="100%">
+</section>
+
+<section id="task5" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\output#5.jpeg" width="100%">
+</section>
+
+<section id="task6" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\output#6.jpeg" width="100%">
+</section>
+
+<!-- CODES -->
+<section id="code1" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\code#1.jpg" width="100%">
+</section>
+
+<section id="code2" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\code#2.jpg" width="100%">
+</section>
+
+<section id="code3" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\code#3.jpg" width="100%">
+</section>
+
+<section id="code4" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\code#4.jpg" width="100%">
+</section>
+
+<section id="code5" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\code#5.jpg" width="100%">
+</section>
+
+<section id="code6" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="c:\Users\hilary\Downloads\code#6.jpg" width="100%">
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: jmdiaz0896@iskwela.psau.edu.ph</p>
+<p>Facebook: Jamaica Sangalang</p>
+</section>
+
+<!-- 🌸 Sakura Script -->
+<script>
+function createSakura(){
+    const sakura = document.createElement("div");
+    sakura.classList.add("sakura");
+    sakura.innerHTML = "🌸";
+
+    sakura.style.left = Math.random() * window.innerWidth + "px";
+    sakura.style.animationDuration = (3 + Math.random() * 5) + "s";
+
+    document.body.appendChild(sakura);
+
+    setTimeout(()=>{ sakura.remove(); },8000);
+}
+
+setInterval(createSakura,300);
+</script>
+
+</body>
+</html>
