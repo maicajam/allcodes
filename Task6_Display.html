@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 6 - Display Property</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+
+       
+        .block-input{
+            display: block;
+            width: 250px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        
+        .inline-box{
+            display: inline-block;
+            width: 300px;
+            vertical-align: middle;
+        }
+
+        .btn{
+            display: inline-block;
+            width: 60px;
+            padding: 5px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+       
+        .google-section{
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .google-logo{
+            width: 200px;
+            margin-bottom: 15px;
+        }
+
+        .google-search{
+            width: 400px;
+            padding: 10px;
+        }
+
+      
+        .challenge{
+            margin-top: 50px;
+        }
+
+        .form-box{
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .form-box input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .signup-btn{
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .uber-box{
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .uber-btn{
+            display: inline-block;
+            width: 140px;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        .request{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .schedule{
+            background-color: #eee;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+   
+    <input type="text" placeholder="Name" class="block-input">
+    <input type="email" placeholder="Email" class="block-input">
+
+
+ 
+    <div class="inline-box">
+        <p>Thanks for chatting with our customer support. 
+        Would you like to take our quick survey?</p>
+    </div>
+
+    <button class="btn">Yes</button>
+    <button class="btn">No</button>
+
+
+    <div class="google-section">
+ 
+       
+ 
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+             alt="Google Logo" class="google-logo">
+
+        <br>
+        <input type="text" placeholder="Search Google or type a URL" class="google-search">
+    </div>
+
+
+    <div class="challenge">
+        <h2>Challenge Exercise</h2>
+
+       
+        <div class="form-box">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <button class="signup-btn">Sign Up</button>
+        </div>
+
+
+       
+        <div class="uber-box">
+            <h2>Request a ride now</h2>
+            <input type="text" placeholder="Enter pickup location">
+            <input type="text" placeholder="Enter destination">
+
+            <button class="uber-btn request">Request now</button>
+            <button class="uber-btn schedule">Schedule for later</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
