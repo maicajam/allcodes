@@ -16,19 +16,20 @@
     font-family:'Poppins',sans-serif;
 }
 
-html{scroll-behavior:smooth;}
+html{
+    scroll-behavior:smooth;
+}
 
 body{
     background:linear-gradient(135deg,#ffe6f7,#f5e6ff);
     overflow-x:hidden;
 }
 
-
 .sakura{
     position:fixed;
     top:-10px;
     font-size:20px;
-    animation: fall linear infinite;
+    animation:fall linear infinite;
 }
 
 @keyframes fall{
@@ -36,7 +37,6 @@ body{
         transform:translateY(100vh) rotate(360deg);
     }
 }
-
 
 header{
     text-align:center;
@@ -51,19 +51,22 @@ header{
     border-radius:50%;
     border:5px solid white;
     box-shadow:0 0 25px #ff9acb;
-    animation: float 4s ease-in-out infinite;
+    animation:float 4s ease-in-out infinite;
 }
 
 @keyframes float{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-12px);}
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
 }
 
 header h1{
     margin-top:15px;
     text-shadow:0 0 10px white;
 }
-
 
 nav{
     position:sticky;
@@ -87,7 +90,6 @@ nav a:hover{
     text-shadow:0 0 8px #ff9acb;
 }
 
-
 section{
     max-width:900px;
     margin:30px auto;
@@ -97,7 +99,6 @@ section{
     backdrop-filter:blur(12px);
     box-shadow:0 8px 25px rgba(0,0,0,0.1);
 }
-
 
 .project{
     background:rgba(255,255,255,0.85);
@@ -111,7 +112,6 @@ section{
     transform:translateY(-10px) scale(1.02);
     box-shadow:0 10px 30px rgba(199,125,255,0.4);
 }
-
 
 .btn{
     display:inline-block;
@@ -130,8 +130,8 @@ section{
     box-shadow:0 0 20px #ff9acb;
 }
 
-
-.task-output,.task-code{
+.task-output,
+.task-code{
     display:none;
 }
 
@@ -147,7 +147,8 @@ section{
     font-weight:bold;
     text-decoration:none;
 }
-   #skills ul li{
+
+#skills ul li{
     background:rgba(255,255,255,0.85);
     margin:8px 0;
     padding:10px;
@@ -161,34 +162,20 @@ section{
     box-shadow:0 8px 20px rgba(199,125,255,0.4);
 }
 
-.task-output,.task-code{
-    display:none;
-}
-
-.task-output:target,
-.task-code:target{
-    display:block;
-}
-
-.back{
-    display:inline-block;
-    margin-bottom:15px;
-    color:#ff4d88;
-    font-weight:bold;
-    text-decoration:none;
-}
 </style>
 </head>
 
 <body>
 
 <header id="home">
+
 <div class="profile">
 <img src="https://github.com/maicajam/allcodes/blob/main/picture.jpg?raw=true">
 </div>
 
-<h1>🌸 Hi, I'm Jamaica  Mae S. Diaz</h1>
+<h1>🌸 Hi, I'm Jamaica Mae S. Diaz</h1>
 <p>BS Information Technology Student 💻</p>
+
 </header>
 
 <nav>
@@ -201,30 +188,46 @@ section{
 
 <section id="about">
 <h2>About Me</h2>
-<p>Hello! My name is Jam, a college student taking up Bachelor of Science in Information Technology at Pampanga State Agricultural University. I am friendly and outgoing person who loves traveling, watching movies, and exploring new places. </p>
-<p>During my free htime, I sometimes play online and offline games when i feel bored. These hobbies help me relax and  make my day enjoyable</p>
+
+<p>
+Hello! My name is Jam, a college student taking up Bachelor of Science in Information Technology at Pampanga State Agricultural University.
+I am a friendly and outgoing person who loves traveling, watching movies, and exploring new places.
+</p>
+
+<p>
+During my free time, I sometimes play online and offline games when I feel bored.
+These hobbies help me relax and make my day enjoyable.
+</p>
+
 </section>
 
 <section id="education">
+
 <h2>Education</h2>
+
 <ul>
 <li>Pampanga State Agricultural University</li>
 <li>Benigno Aquino National High School</li>
 <li>Tinang Elementary School</li>
 </ul>
+
 </section>
 
-    <section id="skills">
+<section id="skills">
+
 <h2>Skills</h2>
+
 <ul style="list-style:none; padding-left:0;">
-  <li>💻 Basic Java</li>
-  <li>🌐 HTML</li>
-  <li>🎨 CSS</li>
-  <li>⏱️ Time Management</li>
+<li>💻 Basic Java</li>
+<li>🌐 HTML</li>
+<li>🎨 CSS</li>
+<li>⏱️ Time Management</li>
 </ul>
+
 </section>
 
 <section id="projects">
+
 <h2>Projects</h2>
 
 <div class="project">
@@ -261,39 +264,39 @@ section{
 <a href="#code5" class="btn">Code</a>
 <a href="task5_resumedesign.html" class="btn">Actual</a>
 </div>
-    
+
 <div class="project">
 <h3>Task 6 CSS DISPLAY</h3>
 <a href="#task6" class="btn">Output</a>
 <a href="#code6" class="btn">Code</a>
 <a href="Task6_Display.html" class="btn">Actual</a>
 </div>
-    
+
 <div class="project">
 <h3>Finals Task 1</h3>
-<a href="#finals_1" class="btn">Output</a>
-<a href="#finals_1" class="btn">Code</a>
+<a href="#finaltask1" class="btn">Output</a>
+<a href="#codefinal1" class="btn">Code</a>
 <a href="finalstask1.html" class="btn">Actual</a>
-</div> 
-    
-<div class="project">
-<h3>Finals Task 3</h3>
-<a href="#finals_3" class="btn">Output</a>
-<a href="#finals_3" class="btn">Code</a>
-<a href="finaltask3.html" class="btn">Actual</a>
-</div> 
-
-<div class="project">
-<h3>FINAL REQUIRMENTS</h3>
-<a href="#task1" class="btn">WEBSITE</a>
-<a href="#code1" class="btn">FILE</a>
-<a href="task1_resume.html" class="btn">VIDEO</a>
 </div>
 
+<div class="project">
+<h3>Finals Task 3</h3>
+<a href="#finaltask3" class="btn">Output</a>
+<a href="#codefinal3" class="btn">Code</a>
+<a href="finaltask3.html" class="btn">Actual</a>
+</div>
+
+<div class="project">
+<h3>FINAL REQUIREMENTS</h3>
+<a href="https://yourwebsite.github.io" class="btn">WEBSITE</a>
+<a href="finalrequirements.zip" class="btn">FILE</a>
+<a href="finalrequirements_video.mp4" class="btn">VIDEO</a>
+</div>
 
 </section>
 
-    
+<!-- TASK OUTPUTS -->
+
 <section id="task1" class="task-output">
 <a href="#projects" class="back">⬅ Back</a>
 <img src="https://github.com/maicajam/allcodes/blob/main/output%231.jpeg?raw=true" width="100%">
@@ -324,36 +327,67 @@ section{
 <img src="https://github.com/maicajam/allcodes/blob/main/output%236.jpeg?raw=true" width="100%">
 </section>
 
+<!-- FINALS TASK 1 OUTPUT -->
+
 <section id="finaltask1" class="task-output">
 <a href="#projects" class="back">⬅ Back</a>
-<img src="<section id="task6" class="task-output">
-<a href="#projects" class="back">⬅ Back</a>
-<img src="finaltask1_output.jpg">
-</section>">
+<img src="finaltask1_output.jpg" width="100%">
 </section>
 
+<!-- FINALS TASK 1 CODE -->
+
+<section id="codefinal1" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="finaltask1_code.jpg" width="100%">
+</section>
+
+<!-- FINALS TASK 3 OUTPUT -->
+
+<section id="finaltask3" class="task-output">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="finaltask3_output.jpg" width="100%">
+</section>
+
+<!-- FINALS TASK 3 CODE -->
+
+<section id="codefinal3" class="task-code">
+<a href="#projects" class="back">⬅ Back</a>
+<img src="finaltask3_code.jpg" width="100%">
+</section>
 
 <section id="contact">
+
 <h2>Contact</h2>
+
 <p>Email: jmdiaz0896@iskwela.psau.edu.ph</p>
 <p>Facebook: Jamaica Sangalang</p>
+
 </section>
-    
+
 <script>
+
 function createSakura(){
+
     const sakura = document.createElement("div");
+
     sakura.classList.add("sakura");
+
     sakura.innerHTML = "🌸";
 
     sakura.style.left = Math.random() * window.innerWidth + "px";
+
     sakura.style.animationDuration = (3 + Math.random() * 5) + "s";
 
     document.body.appendChild(sakura);
 
-    setTimeout(()=>{ sakura.remove(); },8000);
+    setTimeout(()=>{
+        sakura.remove();
+    },8000);
+
 }
 
 setInterval(createSakura,300);
+
 </script>
 
 </body>
